@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.cart-container{
+  width: 60%;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  flex: 1;
+}
+
+.cart-title{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #343a40;
+}
+
+#cart-items{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-summary{
+  margin-top: 30px;
+  border-top: 1px solid #dee2e6;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.cart-summary h2{
+  font-size: 1.8rem;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.remove-item-btn{
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.remove-item-btn:hover{
+    background-color: #d32f2f;
+}
+
+.remove-item-btn:focus{
+    outline: none;
+}
+
+.cart-item-actions{
+  display: flex;
+  gap: 10px;
+}
+
+.place-order-btn{
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.place-order-btn:hover{
+  background-color: #218838;
+}
+
+.place-order-btn:focus{
+  outline: none;
+}
+
+.clear-cart-btn{
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-cart-btn:hover{
+  background-color: #5a6268;
+}
+
+.footer{
+  padding: 15px;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive code for smaller devices */
+@media (max-width: 767px){
+  .cart-container{
+    width: 90%;
+  }
+}
