@@ -87,9 +87,21 @@ button:hover{
     border: 1px solid #c3e6cb;
 }
 
-/* Responsive desing code for smaller devices */
+/* Responsive design code for all screen dimensions */
 @media (max-width: 767px){
     .checkout-container{
         width: 90%;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .checkout-container{
+        flex: none;
+    }
+}
+
+@media (min-width: 1024px){
+  .checkout-container{
+    flex: none;
+  }
 }

@@ -119,9 +119,21 @@ body{
   border-top: 1px solid #ccc;
 }
 
-/* Responsive code for smaller devices */
+/* Responsive code for all screen dimensions */
 @media (max-width: 767px){
   .cart-container{
     width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .cart-container{
+        flex: none;
+    }
+}
+
+@media (min-width: 1024px){
+  .cart-container{
+    flex: none;
   }
 }
