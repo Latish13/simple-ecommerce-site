@@ -1,7 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -159,6 +164,7 @@ body{
 }
 
 /* Responsive code for all screen dimensions */
+/* #1 */
 @media (max-width: 767px){
     #hamburger{
         display: block;
@@ -188,13 +194,12 @@ body{
         align-items: flex-start;
         background-color: #333;
         position: absolute;
-        top: 48px;
+        top: 50px;
         right: 0;
         padding: 20px;
         margin: 0;
         font-size: 20px;
         gap: 50px;
-        z-index: 1;
     }
 
     .navbar-link{
@@ -212,8 +217,13 @@ body{
     .product-info ul{
         list-style-position: outside;
     }
+
+    .footer{
+        z-index: 999;
+    }
 }
 
+/* #2 */
 @media (min-width: 768px) and (max-width: 1023px){
     .grid{
         height: 100vh;
@@ -226,7 +236,8 @@ body{
     }
 }
 
-@media (min-width: 1024px){
+/* #3 */
+@media (min-width: 1024px) and (max-width: 1279px){
     .grid{
         height: 100vh;
     }
@@ -235,5 +246,12 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+/* 4 */
+@media (max-width: 1024px) and (max-height: 600px) and (orientation: landscape){
+    .grid{
+        height: auto;
     }
 }

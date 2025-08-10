@@ -88,18 +88,21 @@ button:hover{
 }
 
 /* Responsive design code for all screen dimensions */
+/* #1 */
 @media (max-width: 767px){
     .checkout-container{
         width: 90%;
     }
 }
 
+/* #2 */
 @media (min-width: 768px) and (max-width: 1023px){
     .checkout-container{
         flex: none;
     }
 }
 
+/* #3 */
 @media (min-width: 1024px){
   .checkout-container{
     flex: none;
