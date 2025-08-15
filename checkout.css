@@ -1,105 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif
-}
-
-html, body{
-    height: 100%;
-    margin: 0;
-}
-
 body{
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .checkout-container{
-    width: 60%;
-    margin: auto;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20x rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    flex: 1;
+  width: 60%;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20x rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  flex: 1;
 }
 
 h2{
-    text-align: center;
-    color: #333;
-    font-size: 2.2rem;
+  text-align: center;
+  color: #333;
+  font-size: 2.2rem;
 }
 
 .form-group{
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
 }
 
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
+input,
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-input[type="text"], input[type="email"]{
-    height: 40px;
+input[type="text"],
+input[type="email"]{
+  height: 40px;
 }
 
 textarea{
-    height: 100px;
-    resize: vertical;
+  height: 100px;
+  resize: vertical;
 }
 
 button{
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
 }
 
 button:hover{
-    background-color: #218838;
+  background-color: #218838;
 }
 
 .success-message{
-    background-color: #d4edda;
-    color: #155724;
-    padding: 15px;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 18px;
-    border: 1px solid #c3e6cb;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  border: 1px solid #c3e6cb;
 }
 
 /* Responsive design code for all screen dimensions */
 /* #1 */
 @media (max-width: 767px){
-    .checkout-container{
-        width: 90%;
-    }
+  .checkout-container{
+    width: 90%;
+  }
 }
 
 /* #2 */
 @media (min-width: 768px) and (max-width: 1023px){
-    .checkout-container{
-        flex: none;
-    }
+  .checkout-container{
+    flex: none;
+  }
 }
 
 /* #3 */
